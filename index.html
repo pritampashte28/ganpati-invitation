@@ -1,188 +1,164 @@
 <!DOCTYPE html>
-<html lang="mr">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Ganesh Chaturthi — An Invitation</title>
+<meta name="description" content="Ganpati Bappa Morya! You and your family are invited for darshan, aarti and prasad at our home on 14 &amp; 14 September 2026.">
+<meta name="theme-color" content="#f3e3d3">
 
-<title>गणेशोत्सव निमंत्रण | पाश्ते परिवार</title>
+<!-- Share preview (WhatsApp / social). Set og:url and og:image to your hosted URL. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Happy Ganesh Chaturthi — An Invitation">
+<meta property="og:description" content="Darshan, aarti and prasad at our home — 14 till 18 September 2026.">
+<meta property="og:image" content="assets/garland.png">
+<meta name="twitter:card" content="summary_large_image">
 
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="rgin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:'Noto Sans Devanagari', sans-serif;
-    background:linear-gradient(135deg,#fff5e6,#ffe6cc);
-    color:#5a2d0c;
-    text-align:center;
-}
-
-.container{
-    max-width:800px;
-    margin:auto;
-    padding:20px;
-}
-
-.hero{
-    background:white;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 8px 25px rgba(0,0,0,0.15);
-}
-
-.hero img{
-    width:100%;
-    display:block;
-}
-
-.content{
-    padding:30px;
-}
-
-.om{
-    font-size:40px;
-    color:#e65100;
-}
-
-h1{
-    color:#d84315;
-    margin:15px 0;
-    font-size:2.3rem;
-}
-
-.family{
-    font-size:1.4rem;
-    color:#bf360c;
-    font-weight:bold;
-}
-
-.invitation{
-    margin-top:25px;
-    line-height:1.9;
-    font-size:1.15rem;
-}
-
-.details{
-    background:#fff8f0;
-    border-left:6px solid #ff9800;
-    border-radius:12px;
-    padding:20px;
-    margin-top:25px;
-}
-
-.detail{
-    margin:10px 0;
-}
-
-.button{
-    display:inline-block;
-    text-decoration:none;
-    background:#ff6f00;
-    color:white;
-    padding:14px 22px;
-    border-radius:10px;
-    margin:12px;
-    font-size:1rem;
-    font-weight:600;
-    transition:0.3s;
-}
-
-.button:hover{
-    background:#e65100;
-}
-
-.footer{
-    margin-top:30px;
-    font-size:1.05rem;
-    line-height:1.8;
-}
-
-.bappa{
-    margin-top:20px;
-    color:#d84315;
-    font-size:1.4rem;
-    font-weight:bold;
-}
-
-@media(max-width:600px){
-
-    h1{
-        font-size:1.8rem;
-    }
-
-    .invitation{
-        font-size:1rem;
-    }
-}
-</style>
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mukta:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="container">
+<div class="frame">
 
-<div class="hero">
+  <!-- 01 Hero -->
+  <section class="hero" aria-label="Ganpati Bappa Morya">
+    <video id="heroVideo" class="hero__video"
+           src="uploads/Mouse_looking_at_rotating_Ganpati_202609051306.mp4"
+           autoplay loop muted playsinline aria-hidden="true"></video>
+    <div class="hero__scrim"></div>
+    <div id="heroText" class="hero__text">
+      <p class="hero__mantra">गणपती बाप्पा मोरया</p>
+      <p class="hero__roman">Ganpati Bappa Morya</p>
+      <div class="hero__rule"></div>
+      <p class="hero__cue">Scroll to open the invitation</p>
+      <p class="hero__arrow" aria-hidden="true">↓</p>
+    </div>
+  </section>
 
-<img src="ganpati.jpg" alt=ntent">
+  <!-- 02 Invitation -->
+  <section id="sec2" class="scene scene--invite">
+    <div class="scene__stage stage--invite">
+      <span class="spark spark--1" aria-hidden="true"></span>
+      <span class="spark spark--2" aria-hidden="true"></span>
+      <span class="spark spark--3" aria-hidden="true"></span>
 
-<div class="om">॥ श्री गणेशाय नमः ॥</div>
+      <div id="garlandL" class="garland garland--left">
+        <img src="assets/garland.png" alt="Jasmine garlands">
+      </div>
+      <div id="garlandR" class="garland garland--right" aria-hidden="true">
+        <img src="assets/garland.png" alt="">
+      </div>
 
-<h1>गणेशोत्सव निमंत्रण</h1>
+      <div id="bell1" class="bell bell--1">
+        <div class="bell__swing bell__swing--slow-a">
+          <img src="assets/bellLong2.png" alt="Temple bell">
+        </div>
+      </div>
+      <div id="bell2" class="bell bell--2">
+        <div class="bell__swing bell__swing--fast-a">
+          <img src="uploads/bell.png" alt="Temple bell">
+        </div>
+      </div>
+      <div id="bell3" class="bell bell--3">
+        <div class="bell__swing bell__swing--fast-b">
+          <img src="uploads/bell.png" alt="Temple bell">
+        </div>
+      </div>
+      <div id="bell4" class="bell bell--4">
+        <div class="bell__swing bell__swing--slow-b">
+          <img src="assets/bellLong2.png" alt="Temple bell">
+        </div>
+      </div>
 
-<div class="family">
-पाश्ते परिवार
+      <img id="diyaL" class="diya diya--left" src="assets/lamp2.png" alt="Brass oil lamp">
+      <img id="diyaR" class="diya diya--right" src="assets/lamp2.png" alt="Brass oil lamp">
+
+      <div id="invite" class="invite">
+        <p class="invite__salutation">॥ श्री गणेशाय नमः ॥</p>
+        <div class="invite__stem"></div>
+        <h1 class="invite__title">Happy Ganesh Chaturthi</h1>
+        <p class="invite__body">We invite you and your family to join us for darshan, aarti and prasad at our home.</p>
+        <p class="invite__marathi">सहकुटुंब सहपरिवार सस्नेह आमंत्रण</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 Details -->
+  <section id="sec3" class="scene scene--details">
+    <div class="scene__stage stage--details">
+
+      <div id="petals" class="petals" aria-hidden="true">
+        <span class="petal petal--1"></span>
+        <span class="petal petal--2"></span>
+        <span class="petal petal--3"></span>
+        <span class="petal petal--4"></span>
+      </div>
+
+      <div id="cardRegion" class="card-region">
+        <div id="card" class="card">
+          <header class="card__head">
+            <p class="card__eyebrow">Ganeshotsav 2026</p>
+            <h2 class="card__title">Darshan &amp; Aarti</h2>
+          </header>
+
+          <div class="card__panel">
+            <div class="field">
+              <p class="field__label">Days</p>
+              <p class="field__value">14 - 18 September 2026</p>
+              <p class="field__note">Sunday - Friday · घरगुती गणपती</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="field-row">
+              <div class="field">
+                <p class="field__label">Morning Aarti</p>
+                <p class="field__value field__value--sm">8:00 AM</p>
+              </div>
+              <div class="field-row__split"></div>
+              <div class="field">
+                <p class="field__label">Evening Aarti</p>
+                <p class="field__value field__value--sm">7:30 PM</p>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="field">
+              <p class="field__label">Venue</p>
+              <p class="field__address">श्री गणेश वाडी,<br>पाभरे, गुहागर, रत्नागिरी, महाराष्ट्र ४१५७०२</p>
+            </div>
+
+            <button id="shareBtn" type="button" class="btn-share">Share this invitation on WhatsApp</button>
+          </div>
+
+          <p class="card__signoff">— THE PASHTE FAMILY —</p>
+        </div>
+      </div>
+
+      <div class="mouse-strip">
+        <div id="bubble" class="bubble">
+          <div class="bubble__box">
+            <p class="bubble__line">चला! I'll show you the way</p>
+            <p class="bubble__hint">Tap me for directions</p>
+          </div>
+          <div class="bubble__tail"></div>
+        </div>
+        <div id="mouse" class="mouse">
+          <button id="mapBtn" type="button" class="mouse__btn" aria-label="Open directions in Google Maps">
+            <img src="uploads/Mouse.png" alt="Bappa's mushak">
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 </div>
 
-<div class="invitation">
-
-सर्व गणेशभक्तांना सप्रेम नमस्कार 🙏
-
-गणरायाच्या आगमनाचा आनंदोत्सव साजरा करण्यासाठी
-आपण व आपल्या परिवारास हार्दिक निमंत्रण.
-
-आपल्या उपस्थितीने आमचा उत्सव अधिक मंगलमय
-आणि आनंददायी होईल.
-
-</div>
-
-<div class="details">
-
-<div class="detail">
-📅 <strong>दिनांक:</strong> १४ सप्टेंबर २०२६
-</div>
-
-<div class="detail">
-⏰ <strong>वेळ:</strong> सकाळी ९:०० वाजता
-</div>
-
-<div class="detail">
-📍 <strong>स्थळ:</strong><br>
-श्री गणेश वाडी,<br>
-पाभरे, गुहागर,<br>
-रत्नागिरी, महाराष्ट्र ४१५७०२
-</div>
-
-</div>
-
-<a class="button"
-href="https://maps.app.goo.gl/EzBgtugWPpssqHqE8"
-target="_blank">
-📍 स्थान पाह.me/?text=गणेशोत्सव निमंत्रण - कृपया भेट द्याclass="footer">
-
-आपल्या उपस्थितीची आम्ही आतुरतेने वाट पाहत आहोत.
-
-</div>
-
-<div class="bappa">
-🙏 गणपती बाप्पा मोरया 🙏
-</div>
-
-</div>
-</div>
-
-</div>
-
+<script src="app.js"></script>
 </body>
 </html>
-``
